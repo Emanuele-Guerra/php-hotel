@@ -48,13 +48,68 @@ $hotels = [
     ],
 
 ];
-foreach($hotels as $hotel){
-    echo $name
-}
+$count = 0;
 ?>
-<div>
-    <p><?php echo $name ?></p>
-</div>
+
+
+
+
+<table class="table">
+  <thead>
+    <tr>
+        <?php foreach($hotels as $hotel){
+            $count ++;
+        }?>
+      <th scope="col">HOTELS</th>
+      <th scope="col"><?php echo $hotel["name"]; ?></th>
+      <th scope="col"><?php echo $hotel["name"]; ?></th>
+      <th scope="col"><?php echo $hotel["name"]; ?></th>
+      <th scope="col"><?php echo $hotel["name"]; ?></th>
+      <th scope="col"><?php echo $hotel["name"]; ?></th>
+      
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <?php foreach($hotels as $hotel)?>
+      <th scope="row">DESCRIPTION</th>
+      <td><?php echo $hotel["description"]; ?></td>
+      <td><?php echo $hotel["description"]; ?></td>
+      <td><?php echo $hotel["description"]; ?></td>
+      <td><?php echo $hotel["description"]; ?></td>
+      <td><?php echo $hotel["description"]; ?></td>
+    </tr>
+    <tr>
+    <?php foreach($hotels as $hotel)?>
+      <th scope="row">PARKING</th>
+      <td><?php echo $hotel["parking"]; ?></td>
+      <td><?php echo $hotel["parking"]; ?></td>
+      <td><?php echo $hotel["parking"]; ?></td>
+      <td><?php echo $hotel["parking"]; ?></td>
+      <td><?php echo $hotel["parking"]; ?></td>
+    </tr>
+    <tr>
+    <?php foreach($hotels as $hotel)?>
+      <th scope="row">VOTE</th>
+      <td><?php echo $hotel["vote"]; ?></td>
+      <td><?php echo $hotel["vote"]; ?></td>
+      <td><?php echo $hotel["vote"]; ?></td>
+      <td><?php echo $hotel["vote"]; ?></td>
+      <td><?php echo $hotel["vote"]; ?></td>
+    </tr>
+    <tr>
+    <?php foreach($hotels as $hotel)?>
+      <th scope="row">DISTANCE TO CENTER</th>
+      <td><?php echo $hotel["distance_to_center"]; ?></td>
+      <td><?php echo $hotel["distance_to_center"]; ?></td>
+      <td><?php echo $hotel["distance_to_center"]; ?></td>
+      <td><?php echo $hotel["distance_to_center"]; ?></td>
+      <td><?php echo $hotel["distance_to_center"]; ?></td>
+    </tr>
+  </tbody>
+</table>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </body>
